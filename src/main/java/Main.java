@@ -1,14 +1,20 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+  
+  public static void main(String[] args) {//main method
+    
+    System.out.println("Testing override, overload, and abstract. \n\n\n\n");
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
-}
+    //Robot rOne = new Robot("Roomba", "Mopper");
+    //Robot rTwo = new Robot();
+    Cleaning cOne = new Cleaning("Roomba", "Floor Cleaner", "Pine sol");
+    Exploration eOne = new Exploration("Mars One", "Mapping", "Mass Spectrometer");
+    
+    //System.out.println(rOne);
+    //System.out.println(rTwo);
+    System.out.println(cOne + cOne.move("south", "700MPH"));
+    System.out.println(eOne + eOne.move("west", "10MPH"));
+    
+  }//end method
+  
+}//end class
